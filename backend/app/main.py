@@ -12,9 +12,9 @@ app = FastAPI(
 )
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MODEL_PATH = os.path.join(BASE_DIR, "model", "t20_score_predictor.pkl")
+MODEL_PATH = os.path.join(BASE_DIR, "model", "t20_score_predictor_2.pkl")
 
-MODEL_URL = "https://huggingface.co/SanjuTuni/t20-score-predictor/resolve/main/t20_score_predictor.pkl"
+MODEL_URL = "https://huggingface.co/SanjuTuni/world_cup_score_predictor_model/resolve/main/t20_score_predictor_2.pkl"
 
 
 def download_model():
