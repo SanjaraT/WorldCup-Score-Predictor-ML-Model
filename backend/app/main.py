@@ -129,17 +129,13 @@ app = FastAPI(
     version="1.0"
 )
 
-# ----------------------
-# Paths and URLs
-# ----------------------
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODEL_DIR = os.path.join(BASE_DIR, "model")
 MODEL_PATH = os.path.join(MODEL_DIR, "t20_score_predictor_2.pkl")
 MODEL_URL = "https://huggingface.co/SanjuTuni/world_cup_score_predictor_model/resolve/main/t20_score_predictor_2.pkl"
 
-# ----------------------
-# Lazy-loaded model
-# ----------------------
+
 model = None
 
 def download_model():
@@ -162,18 +158,14 @@ def get_model():
         print("Model loaded successfully!")
     return model
 
-# ----------------------
-# Constants & Helpers
-# ----------------------
+
 TOTAL_BALLS = 120
 TOTAL_WICKETS = 10
 
 def normalize_text(text: str) -> str:
     return text.strip().title()
 
-# ----------------------
-# Routes
-# ----------------------
+
 @app.get("/")
 def home():
     return {"message": "T20 Score Predictor API is running"}
