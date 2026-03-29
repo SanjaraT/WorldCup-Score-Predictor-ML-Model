@@ -25,7 +25,6 @@ Performed feature engineering by:
 
 Developed a Scikit-learn pipeline using a ColumnTransformer for preprocessing and a Random Forest Regressor for prediction, and deployed the model as a production-ready ML service.
 
-The model was trained on historical match data from the Cricsheet: A Retrosheet for Cricket(https://www.kaggle.com/datasets/veeralakrishna/cricsheet-a-retrosheet-for-cricket), which contains ball-by-ball records of T20 matches. The processed data was used to build a robust machine learning pipeline and deployed as a production-ready ML service.
 
 ⚙️ Tech Stack
 
